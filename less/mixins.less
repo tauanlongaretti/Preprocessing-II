@@ -1,13 +1,21 @@
 // Mixins in here
 
 //buttons
-.button {
-    background-color: #008080;
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-    width: 83%;
-    padding: 13px 10px;
-    border-radius: 15px;
-    text-align: center;
+.button (@background, @size, @weight, @color, @width, @padding, @radius, @align){
+    background-color: @background;
+    font-size: @size;
+    font-weight: @weight;
+    color: @color;
+    width: @width;
+    padding: @padding;
+    border-radius: @radius;
+    text-align: @align;
+}
+
+//position
+
+.margin {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
 }

@@ -9,22 +9,42 @@
     align-items: center;
     border-bottom: 2px dashed silver;
     justify-content: center;
+
+    @media @mobile {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0px 0px 9px 0px;
+    }
     
     div {
         width: 400px;
         padding-left: 3.3%;
+
+        @media @mobile {
+            padding: 0px;
+        }
 
         a {
             text-decoration: none;
             color: black;
             font-size: 155%;
             font-weight: 500;
-            padding-left: 8.5%;  
+            padding-left: 8.5%;
+            
+            @media @mobile {
+                padding: 0px 7.5% 0px 5%;
+            }
         }  
     }
 }
 
 h1 {
     width: 400px;
+
+    @media @mobile {
+       font-size: 300%;
+       padding: 15px 0px;  
+    }
+
 }
     
