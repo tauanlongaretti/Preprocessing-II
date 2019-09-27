@@ -1,9 +1,3 @@
-.navBar {
-  display: flex;
-  max-width: 400px;
-  margin: 0 auto;
-  justify-content: space-around;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -175,25 +169,20 @@ img {
   margin: 0 auto;
 }
 nav {
-  max-width: 400px;
-  margin: 0 auto;
-  justify-content: space-around;
   display: flex;
-  align-content: flex-start;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
 }
-nav .navigation {
-  max-width: 400px;
-  margin: 0 auto;
-  justify-content: space-around;
-  display: flex;
+nav h1 {
+  width: 50%;
+}
+nav h1 a {
   align-items: center;
-  justify-items: space-around;
-}
-nav .navigation a {
+  align-content: space-around;
   text-decoration: none;
   color: black;
-  font-size: 150%;
-  font-weight: 600;
 }
 header {
   max-width: 800px;
