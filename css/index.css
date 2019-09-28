@@ -1,3 +1,8 @@
+.tabletMargin {
+  max-width: 860px;
+  width: 94%;
+  margin: 0 auto;
+}
 .margin {
   max-width: 500px;
   width: 90%;
@@ -183,10 +188,17 @@ img {
   border-bottom: 2px dashed silver;
   justify-content: center;
 }
+@media (max-width: 860px) {
+  .navBar {
+    max-width: 860px;
+    width: 94%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
 @media (max-width: 500px) {
   .navBar {
     flex-wrap: wrap;
-    text-align: center;
     padding: 0px 0px 9px 0px;
   }
 }
@@ -194,9 +206,15 @@ img {
   width: 400px;
   padding-left: 3.3%;
 }
+@media (max-width: 860px) {
+  .navBar div {
+    padding: 0px 4%;
+    text-align: right;
+  }
+}
 @media (max-width: 500px) {
   .navBar div {
-    padding: 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .navBar div a {
@@ -206,18 +224,34 @@ img {
   font-weight: 500;
   padding-left: 8.5%;
 }
+@media (max-width: 860px) {
+  .navBar div a {
+    padding: 0px 0px 0px 2vh;
+  }
+}
 @media (max-width: 500px) {
   .navBar div a {
-    padding: 0px 7.5% 0px 5%;
+    width: 100%;
+    text-align: center;
+    padding: 0px 5% 0px 6%;
   }
 }
 h1 {
   width: 400px;
 }
+@media (max-width: 860px) {
+  h1 {
+    width: 25%;
+    font-size: 5vw;
+    text-align: left;
+  }
+}
 @media (max-width: 500px) {
   h1 {
+    width: 100%;
     font-size: 300%;
     padding: 15px 0px;
+    text-align: center;
   }
 }
 .footer {
@@ -234,6 +268,13 @@ h1 {
 @media (max-width: 500px) {
   .home p {
     font-size: 155%;
+  }
+}
+@media (max-width: 860px) {
+  .home {
+    max-width: 860px;
+    width: 94%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
@@ -331,6 +372,13 @@ header {
   width: 100%;
   margin: 0 auto;
   border-bottom: 2px dashed silver;
+}
+@media (max-width: 860px) {
+  header {
+    max-width: 860px;
+    width: 94%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 500px) {
   header {

@@ -10,9 +10,13 @@
     border-bottom: 2px dashed silver;
     justify-content: center;
 
+    @media @tablet {
+        .tabletMargin();
+        justify-content: space-between;  
+      }
+
     @media @mobile {
         flex-wrap: wrap;
-        text-align: center;
         padding: 0px 0px 9px 0px;
     }
     
@@ -20,8 +24,13 @@
         width: 400px;
         padding-left: 3.3%;
 
+        @media @tablet {
+        padding: 0px 4%;
+        text-align: right;
+        }
+
         @media @mobile {
-            padding: 0px;
+            padding: 0px 0px 0px 0px;
         }
 
         a {
@@ -30,9 +39,15 @@
             font-size: 155%;
             font-weight: 500;
             padding-left: 8.5%;
+
+            @media @tablet {
+                padding: 0px 0px 0px 2vh;
+                }
             
             @media @mobile {
-                padding: 0px 7.5% 0px 5%;
+                width: 100%;
+                text-align: center;
+                padding: 0px 5% 0px 6%;
             }
         }  
     }
@@ -41,9 +56,17 @@
 h1 {
     width: 400px;
 
+    @media @tablet {
+        width: 25%;
+        font-size: 5vw;
+        text-align: left; 
+      }
+
     @media @mobile {
-       font-size: 300%;
-       padding: 15px 0px;  
+        width: 100%;
+        font-size: 300%;
+        padding: 15px 0px; 
+        text-align: center;
     }
 
 }
